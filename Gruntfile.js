@@ -68,6 +68,13 @@ module.exports = function (grunt) {
       }
     },
 
+    'gh-pages': {
+      options: {
+        base: 'dist'
+      },
+      src: ['**']
+    },
+
     // The actual grunt server settings
     connect: {
       options: {
@@ -433,6 +440,11 @@ module.exports = function (grunt) {
     'rev',
     'usemin',
     'htmlmin'
+  ]);
+
+  grunt.registerTask('publish', [
+    'build',
+    'gh-pages'
   ]);
 
   grunt.registerTask('default', [
