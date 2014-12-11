@@ -1,12 +1,14 @@
 <!DOCTYPE html> <html class=no-js> <head> <meta charset=utf-8> <title>mermaid demo</title> <meta name=description content=""> <meta name=viewport content="width=device-width"> <link rel="shortcut icon" href=/6df2b309.favicon.ico> <!-- Place favicon.ico and apple-touch-icon.png in the root directory --> <link rel=stylesheet href=styles/d4d39b33.main.css> <script src=scripts/vendor/fbe20327.modernizr.js></script>  <body> <!--[if lt IE 10]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]--> <div class=js-mermaid> <textarea class=js-mermaid-content style="height: 300px; width: 600px">
-        graph TD;
-            sq[Square shape]-->ci((Circle shape));
-            od>Odd shape]---|Two line <br>edge comment|ro;
-            od2>Really long text in an Odd shape]-->od3>Really long text with linebreak <br>in an Odd shape];
-            di{Diamond is  <br> broken}-->ro(Rounded <br>square <br>shape);
-            di-->ro2(Rounded square shape);
-            e((Inner circle))-->f(,.?!+-*ز);
-            style e red;
-      </textarea> <button class=js-mermaid-build>Build Graph!</button> <div class=js-mermaid-target></div> </div> <script src=scripts/b0cd228c.vendor.js></script> <script src=scripts/f7425684.main.js></script>  
+    <![endif]--> <div class="js-mermaid container"> <div class=row> <div class=col-xs-9> <textarea class="js-mermaid-content form-control" style="min-height: 300px; resize: vertical">
+graph LR;
+    A[Hard edge]-->B(Round edge);
+    B-->C{Decision};
+    C-->D[Result one];
+    C-->E[Result two];
+    style A fill:#FF0000;
+    style B fill:#00FF00;
+    style C fill:#0000FF;
+    style D fill:#FFF000;
+    style E fill:#0FFFF0;
+        </textarea> </div> <button class="js-mermaid-build col-xs-3 btn btn-primary">Build Graph!</button> </div> <div class=row> <div class=col-xs-9> <div class=js-mermaid-target></div> </div> </div> </div> <script src=scripts/b0cd228c.vendor.js></script> <script src=scripts/f7425684.main.js></script>  
