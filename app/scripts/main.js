@@ -6,6 +6,8 @@ $(function() {
         $content = $el.find('.js-mermaid-content'),
         $target = $el.find('.js-mermaid-target');
 
+    $target.append($('<div class="mermaid">').text($content.val()));
+    window.mermaid.init();
     $el.find('.js-mermaid-build').on('click', function(e) {
       e.preventDefault();
 
