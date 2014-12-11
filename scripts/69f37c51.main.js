@@ -1,0 +1,1 @@
+"use strict";$(function(){$(".js-mermaid").each(function(a,b){var c=$(b),d=c.find(".js-mermaid-content"),e=c.find(".js-mermaid-target");e.append($('<div class="mermaid">').text(d.val())),window.mermaid.init(),c.find(".js-mermaid-build").on("click",function(a){a.preventDefault();var b=$('<div class="mermaid">').text(d.val());e.empty().append(b),window.mermaid.init()})})});
