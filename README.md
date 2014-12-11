@@ -1,6 +1,8 @@
 Mermaid Demo
 ============
 
+[See demo here](http://danielmschmidt.github.io/mermaid-demo/)
+
 Requirements
 -------------
 
