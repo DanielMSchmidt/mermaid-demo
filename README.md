@@ -15,4 +15,5 @@ Getting started
 
 Deployment
 ----------
+
 ```grunt deploy```
