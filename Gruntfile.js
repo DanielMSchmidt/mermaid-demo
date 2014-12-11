@@ -442,7 +442,7 @@ module.exports = function (grunt) {
     'htmlmin'
   ]);
 
-  grunt.registerTask('publish', [
+  grunt.registerTask('deploy', [
     'build',
     'gh-pages'
   ]);
